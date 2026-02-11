@@ -7,17 +7,7 @@
 <link rel="stylesheet"href="style.css">
 </head>
 <body>
-    <header class = "navbar">
-        <div class="logo">
-        <img src="https://scirobnics.com/img/logo/logo.png" alt="Scirobnics Logo">
-        </div>
-        <nav class="nav-link">
-            <a href="#home">HOME</a>
-            <a href="#service">SERVICE</a>
-            <a href="#contact">CONTACT</a>
-            <a href="#about">ABOUT</a>
-   </nav>
-</header>
+<div id="header"></div>
 <section class="slider" id="home">
   <div class="slides">
 
@@ -61,26 +51,6 @@
     <a href="#contact" class="cta-btn">Contact Us</a>
   </div>
 </section>
-
-<section class="services" id="services">
-  <h2>Our Service</h2>
-
-  <div class="services-box">
-    <div class="common-card">
-      <h3>AI Solution</h3>
-    </div>
-
-    <div class="common-card">
-      <h3>Robotics</h3>
-    </div>
-
-    <div class="common-card">
-      <h3>Web Development</h3>
-    </div>
-  </div>
-</section>
-
-
    <section class="about-company">
   <div class="about-container">
 
@@ -219,62 +189,7 @@
     </div>
   </div>
 </section>
-
-<footer class="site-footer">
-  <div class="footer-container">
-
-   <div class="footer-section contact-info">
-      <h3>CONTACT INFO</h3>
-      <p>Corporate Office : 633A, 2nd Floor,<br>
-        Udyog Vihar, Phase V, Gurugram,<br>
-        Haryana-122022, India</p>
-      <p>+91 11-6931-0397</p>
-      <p>info@scirobnics.com</p>
-      <p>www.scirobnics.com</p>
-    </div>
-
- <div class="footer-section">
-      <h3>QUICK LINKS</h3>
-      <ul>
-        <li><a href="#home">› Home</a></li>
-        <li><a href="#about">› About Us</a></li>
-        <li><a href="#contact">› Contact Us</a></li>
-      </ul>
-    </div>
-
- <div class="footer-section">
-      <h3>WHAT WE DO</h3>
-      <ul>
-        <li>› Nexelence Hub</li>
-        <li>› EV-olve Hub</li>
-        <li>› MobiLAB Hub</li>
-        <li>› RobniX Hub</li>
-      </ul>
-    </div>
-<div class="footer-section footer-brand">
-      <img src="https://scirobnics.com/img/logo/logo.png" alt="Scirobnics Logo">
-      <h4>Affiliated By</h4>
-
-      <div class="affiliate-logos">
-        <div class="affiliate-logo startup-logo">
-          <img src="https://scirobnics.com/img/testmonials/logo1.png" alt="Startup India">
-        </div>
-
-        <div class="affiliate-logo msme-logo">
-          <img src="https://scirobnics.com/img/testmonials/logo2.webp" alt="MSME">
-        </div>
-      </div>
-    </div>
-
-  </div> 
-
- 
-  <div class="footer-bottom">
-    <span class="footer-copy">
-      Copyright © 2026 Scirobnics. All Rights Reserved.
-    </span>
-  </div>
-</footer>
+<div id="footer"></div>
 <script>
   const slides = document.querySelectorAll('.slide');
   const nextBtn = document.querySelector('.next');
@@ -300,6 +215,15 @@
     index = (index + 1) % slides.length;
     showSlide(index);
   }, 4500);
+</script>
+<script>
+fetch("header.html")
+  .then(response => response.text())
+  .then(data => document.getElementById("header").innerHTML = data);
+
+fetch("footer.html")
+  .then(response => response.text())
+  .then(data => document.getElementById("footer").innerHTML = data);
 </script>
 </body>
 </html>

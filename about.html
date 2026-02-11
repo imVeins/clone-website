@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+<meta charset= "UTF8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SCIROBNICS INNVOTION | TECHNOLOGY</title>
+<link rel="stylesheet"href="about-style.css">
+</head>
+<body>
+<div id="header"></div>
+<section class="cta-section">
+    <div class="cta-container">
+        <h1>About Us</h1>
+            <a href="index.html">Home</a>
+          </div>
+</section>
+<div id="footer"></div>
+<script>
+fetch("header.html")
+  .then(response => response.text())
+  .then(data => document.getElementById("header").innerHTML = data);
+
+fetch("footer.html")
+  .then(response => response.text())
+  .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+</body>
+</html>
+
+
+
