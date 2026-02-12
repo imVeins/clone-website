@@ -1,31 +1,135 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-<meta charset= "UTF8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SCIROBNICS INNVOTION | TECHNOLOGY</title>
-<link rel="stylesheet"href="about-style.css">
+<html lang="en">
+
+<head>
+  <meta charset="UTF8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCIROBNICS INNVOTION | TECHNOLOGY</title>
+  <link rel="stylesheet" href="about-style.css">
 </head>
 <body>
-<div id="header"></div>
-<section class="cta-section">
-    <div class="cta-container">
-        <h1>About Us</h1>
-            <a href="index.html">Home</a>
+  <div id="header"></div>
+  <section class="page-banner">
+    <div class="page-banner-content">
+      <h1>About Us</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="separator">›</span>
+        <span class="current">About Us</span>
+      </div>
+    </div>
+  </section>
+  <section class="who-we-are">
+    <div class="container">
+
+      <div class="who-content">
+
+        <div class="who-text">
+          <h2>Who we are</h2>
+
+          <p>
+            Scirobnics Technology Pvt. Ltd. stands at the forefront of educational and technological innovation,
+            bridging the gap between learning and industry. We empower school students with hands-on exposure to
+            emerging technologies such as Robotics & IOT, Drones & Aeromodelling, STEM, AR/VR and AI, nurturing
+            curiosity and innovation from an early age.
+          </p>
+
+          <p>
+            For graduates and job seekers, we provide advanced skill training in Electric Vehicles, Battery Technology,
+            PCB Designing & PCBA, Solar Energy Technology and Industrial Robotics – aligned with industry demands and
+            employability standards.
+          </p>
+
+          <p>
+            Driven by a strong focus on Research & Development, Scirobnics is pioneering next-generation drone and
+            mobility solutions that address real-world challenges in sustainability, safety, and smart cities.
+          </p>
+        </div>
+
+        <div class="who-image">
+          <img src="https://scirobnics.com/img/content/aboutus3-min.png" alt="Students Working">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <section class="about-hero">
+    <div class="about-overlay">
+      <div class="about-content">
+        <h2>Shaping the Innovators of Tomorrow</h2>
+
+        <p>
+          At Scirobnics, we are dedicated to empowering the next generation with hands-on experience in the technologies
+          that are transforming the world. Our focus is on providing school students with practical learning in
+          Robotics, Artificial Intelligence (AI), and Drones, fostering creativity, critical thinking, and
+          problem-solving skills.For graduates, we offer specialized, job-oriented training in Electric Vehicles,
+          Drones, and Semiconductors, ensuring they are ready to excel in the fast-evolving tech industry.
+        </p>
+        <p>
+          With a strong commitment to research and development, we are pioneering the next wave of drone technology,
+          addressing real-world challenges, and preparing India's workforce for a future driven by innovation.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="vision-mission-section">
+    <div class="container">
+
+      <h2 class="section-title">Scirobnics Empowering Minds Building Futures</h2>
+      <div class="vm-card">
+        <div class="vm-number">01</div>
+
+        <div class="vm-content">
+          <div class="vm-icon">
+            <i class="fas fa-lightbulb"></i>
           </div>
-</section>
-<div id="footer"></div>
-<script>
-fetch("header.html")
-  .then(response => response.text())
-  .then(data => document.getElementById("header").innerHTML = data);
+          <h4>VISION</h4>
+          <div class="vm-line"></div>
+          <p>
+            To be a global leader in future technology education and innovation –
+            empowering learners, institutions, and communities to shape a sustainable,
+            tech-driven world.
+          </p>
+        </div>
+      </div>
+      <div class="vm-card">
+        <div class="vm-number">02</div>
 
-fetch("footer.html")
-  .then(response => response.text())
-  .then(data => document.getElementById("footer").innerHTML = data);
-</script>
+        <div class="vm-content">
+          <div class="vm-icon">
+            <i class="fas fa-layer-group"></i>
+          </div>
+          <h4>MISSION</h4>
+          <div class="vm-line"></div>
+          <p>
+            At Scirobnics, our mission is to inspire curiosity, foster innovation, and provide hands-on learning in
+            emerging technologies such as Robotics, AI, Drones, EVs, Semiconductors, STEM, and AR/VR. We aim to bridge
+            the gap between education and industry by:
+          </p>
+          <li>Equipping students with future-ready skills from an early age.</li>
+          <li>Providing job-oriented training for graduates and professionals.</li>
+          <li>Collaborating with governments, corporates, and institutions to build Centers of Excellence and outreach
+            programs.</li>
+          <li>Taking science and innovation to the last mile through our “Technology on Wheels” mobile laboratories,
+            ensuring no learner is left behind.</li>
+          <li>Driving research and development to create real-world technology solutions for tomorrow’s challenges.</li>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="footer"></div>
+  <script>
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
 </body>
+
 </html>
-
-
-
